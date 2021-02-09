@@ -9,7 +9,7 @@ import com.google.common.base.Joiner;
 import com.google.common.collect.ImmutableMap;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import me.chanjar.weixin.common.error.WxErrorException;
 import me.chanjar.weixin.common.util.json.GsonParser;
 
@@ -18,6 +18,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static cn.binarywang.wx.miniapp.constant.WxMaApiUrlConstants.LiveGoods.*;
+
 /**
  * <pre>
  *  Created by lipengjun on 2020/6/29.
@@ -25,7 +27,7 @@ import java.util.Map;
  *
  * @author <a href="https://github.com/lipengjun92">lipengjun (939961241@qq.com)</a>
  */
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class WxMaLiveGoodsServiceImpl implements WxMaLiveGoodsService {
   private final WxMaService wxMaService;
 
